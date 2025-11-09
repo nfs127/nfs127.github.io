@@ -1,4 +1,7 @@
-﻿document.body.style.zoom="70%";
+const ua=navigator.userAgent||window.opera;
+const mobileRegex=/android|iphone|ipad|ipod|blackberry|iemobile|opera mini|mobile|windows phone|phone|webos|kindle|tablet/i;
+if(mobileRegex.test(ua.toLowerCase())){document.body.style.zoom="40%";}else{document.body.style.zoom="75%";}
+
 var monthText=["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"];
 var dayText=["一号","二号","三号","四号","五号","六号","七号","八号","九号","十号","十一号","十二号","十三号","十四号","十五号","十六号","十七号","十八号","十九号","二十号","二十一号","二十二号","二十三号","二十四号","二十五号","二十六号","二十七号","二十八号","二十九号","三十号","三十一号"];
 var weekText=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
