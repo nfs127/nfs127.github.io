@@ -1,6 +1,6 @@
 const ua=navigator.userAgent||window.opera;
 const mobileRegex=/android|iphone|ipad|ipod|blackberry|iemobile|opera mini|mobile|windows phone|phone|webos|kindle|tablet/i;
-if(mobileRegex.test(ua.toLowerCase())){document.body.style.zoom="35%";}else{document.body.style.zoom="75%";}
+if(mobileRegex.test(ua.toLowerCase())){document.body.style.zoom="45%";}else{document.body.style.zoom="75%";}
 
 var monthText=["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"];
 var dayText=["一号","二号","三号","四号","五号","六号","七号","八号","九号","十号","十一号","十二号","十三号","十四号","十五号","十六号","十七号","十八号","十九号","二十号","二十一号","二十二号","二十三号","二十四号","二十五号","二十六号","二十七号","二十八号","二十九号","三十号","三十一号"];
@@ -16,4 +16,5 @@ if(isCircle){var widthMid=document.body.clientWidth/2;var heightMid=document.bod
 function initStyle(){var label=document.getElementsByClassName('label');for(var i=0;i<label.length;i++){label[i].style.color='white';}}
 function changePosition(){for(let i=0;i<textSet.length;i++){for(let j=0;j<textSet[i][1].length;j++){let tempX=textSet[i][1][j].offsetLeft+"px";let tempY=textSet[i][1][j].offsetTop+"px";setTimeout(function(){textSet[i][1][j].style.position="absolute";textSet[i][1][j].style.left=tempX;textSet[i][1][j].style.top=tempY;},50);}}}
 function changeCircle(){isCircle=true;clock.style.transform="rotate(90deg)";}
+
 
